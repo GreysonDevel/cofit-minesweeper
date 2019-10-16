@@ -1,7 +1,7 @@
 package eu.greyson.minesweeper;  // do not change
 
-import eu.greyson.minesweeper.game.Player;
 import eu.greyson.minesweeper.game.MineField;
+import eu.greyson.minesweeper.game.Player;
 import eu.greyson.minesweeper.game.TimeoutException;
 
 public class ImplementMePlayer extends Player  {  // do not change
@@ -18,24 +18,17 @@ public class ImplementMePlayer extends Player  {  // do not change
      *
      * HOW TO PLAY:
      * Use game.uncoverField(Field f) to get distances to all mines on the field
-     * Use game.revealMine(Mine m) to reveal mine
+     * Use game.revealMine(Field m) to reveal mine
      *
      * GAME INFO:
      * game.getMinX() and game.getMinY() gives you the minimal used position on the plan
      * game.getMaxX() and game.getMaxY() gives you the maximal used position on X and Y axis respectively
      * game.getNumberOfAllMines() gives you number of mines in the current game
      * game.getDistance(Field f1, Field f2) helps you count the distance between two fields
+
+     * Do not suppress Timeout exception.
      *
-     * HELPER METHODS:
-     * Store information:
-     * markField(Field f, FieldState state) - mark field as either mine field, empty field or unknown field
-     *
-     * Retrieve stored information:
-     * getFieldState(Field f) - returns state of the field
-     * isFieldEmpty/isFieldMine/isFieldUnknown(Field f)
-     * getEmptyFields/getMineFields/getUnknownFields() - return all fields in the state
-     *
-     * Do not supress Timeout exception.
+     * You cannot create custom inner classes.
      */
     @Override
     public void findMines() throws TimeoutException {  // do not change
